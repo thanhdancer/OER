@@ -1,0 +1,22 @@
+@startuml
+skinparam Linetype ortho
+header 
+Version: 1.0.0
+Contributors: thanhdancer@vv0lll.org
+endheader 
+class User
+class Collection
+class Module
+
+package PkgEducationResource {
+    class Resource
+    class Lecture
+    class Section    
+}
+
+Collection --o Module
+Collection --o PkgEducationResource
+Module -r-o PkgEducationResource
+Resource --o Lecture
+Lecture --o Section
+@enduml
